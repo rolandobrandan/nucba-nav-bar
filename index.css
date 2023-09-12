@@ -1,0 +1,40 @@
+nav{
+    background-color: rgb(84, 19, 145);
+    justify-content: space-between;
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.logo{
+    border-radius: 25px;
+    width: 40px;
+    
+}
+.search{
+    border-radius: 20px;
+    font-size:x-large; 
+}
+.button-search{
+    border-radius: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: darkgray;
+}
+.listas{
+    justify-content:flex-end;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
