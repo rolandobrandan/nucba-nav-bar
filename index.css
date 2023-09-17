@@ -1,15 +1,27 @@
 nav{
-    background-color: rgb(84, 19, 145);
+    background-color:black;
     justify-content: space-between;
     display: flex;
     padding: 15px;
     flex-direction: row;
 }
+/* ---TODO--- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    
+}
+body{
+    background-image:url("https://cdn.pixabay.com/photo/2016/01/27/15/25/space-1164579_1280.png"); 
+    /* https://images.alphacoders.com/107/107763.jpg */
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: yellow;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size:large;
 }
 .logo{
     border-radius: 25px;
@@ -26,7 +38,7 @@ nav{
 
 a{
     text-decoration: none;
-    color: black;
+    color: yellow;
 }
 a:hover{
     color: darkgray;
@@ -37,4 +49,67 @@ a:hover{
     list-style: none;
     gap: 20px;
     align-items: center;
+}
+
+/*--- SECCION PRINCIPAL ---*/
+/* ---SECCION PRINCIPAL ---*/
+
+main{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid blue;
+    margin-top: 40px;
+}
+.description{
+    border: solid blue;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    /* margin-left: 20px; */
+    max-width: 50%;
+}
+.img{
+    border: solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    
+}
+.img-principal{
+    border-radius: 20px;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.btn-ppal-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    background-color: yellow;
+    border-radius: 25px;
+}
+
+/* ---SECCION 2--- */
+
+.section-2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 90px 20px 90px;
+    border: solid blue;
 }
