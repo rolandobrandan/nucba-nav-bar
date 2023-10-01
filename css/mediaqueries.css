@@ -1,0 +1,95 @@
+
+
+/* MEDIA QUERIES CELULAR */
+
+@media (max-width:576px )  {
+
+    .navbar ul{
+        background-color: rgb(75, 68, 68);
+        width: 100%;
+        height: calc(100vh - 80px); /*El 100% del viewportHigh, menos los 80px del header*/
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .navbar i{
+        display: block;
+    }
+
+    #toggle-menu:checked ~ .navbar-list {
+        display: flex;
+    }
+   
+}
+
+/* MEDIA QUERIES TABLET */
+
+@media (max-width:992px) {
+
+    .hero-description{
+        text-align: center;
+        width: 90%;
+        align-items: center;
+    }
+
+    .hero-description h1{
+        display: block;
+        width: 100%;
+    }
+
+    .hero-description p{
+        max-width: 80%;
+        font-size: 16px;
+    }
+
+    .button-container{
+        justify-content: center;
+    }
+
+    .hero-img{
+        display: none;
+    }
+
+    /* ---SECCION 2 ABOUT--- */
+    #about{
+        font-size: 15px;
+    }
+
+    /* ---SECCION 3 CARDS--- */
+
+    #cards-section{
+        align-items: center;
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .description-section-3{
+        text-align: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    .card-container{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    .card{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 70%;
+        position: sticky;
+
+    }
+
+}
+
+

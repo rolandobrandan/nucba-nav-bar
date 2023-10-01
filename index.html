@@ -3,60 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
     <title>Star Wars Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Nunito:wght@500;700&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://www.billboard.com/wp-content/uploads/media/star-wars-logo-yellow-font-2015-billboard-650.jpg?w=650" />
-</head>
-<body>
-    <header>
-        <nav>
-            <img class="logo" src="https://www.billboard.com/wp-content/uploads/media/star-wars-logo-yellow-font-2015-billboard-650.jpg?w=650" alt="">
-            
-            <div class="search-container">
-                <input type="search" class="search">
-                <button class="button-search">
-                    <img width="60px" class="logo" src="https://w7.pngwing.com/pngs/1024/519/png-transparent-barbecue-responsive-web-design-char-broil-grilling-search-barbecue-building-logo.png" alt="">
-                </button>
-            </div>
+    <link rel="shortcut icon" href="/img/icono-pestaña.webp" />
 
-            <ul class="listas">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Resumen</a></li>
-                <li><a href="">Personajes</a></li>
-                <li><a href="">Informacion</a></li>
+    <!-- LIBRERIA ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/mediaqueries.css">
+</head>
+
+        <!-- BODY -->
+
+<body>
+    <header class="header">
+
+        <img src="https://www.billboard.com/wp-content/uploads/media/star-wars-logo-yellow-font-2015-billboard-650.jpg?w=650" alt="Logo Landing">
+
+        <nav class="navbar">
+            <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
+            <ul class="navbar-list">
+                <li><a href="#hero" class="navbar-link">Inicio</a></li>
+                <li><a href="#about" class="navbar-link">Nosotros</a></li>
+                <li><a href="#" class="navbar-link">Productos</a></li>
+                <li><a href="#" class="navbar-link">Contacto</a></li>
             </ul>
         </nav>
+     
+            <i class="fa-solid fa-cart-shopping"></i>
+        
+
     </header>
+
     <main>
-        <section class="hero">
 
-            <div class="description">
-                <h1 class="h1-description">Star Wars Episodio I: La amenaza fantasma</h1>
-                <!-- <p>¡Bienvenido a nuestra página web dedicada a Star Wars, el emocionante universo galáctico creado por George Lucas! Sumérgete en una galaxia lejana repleta de héroes, villanos, naves espaciales icónicas y aventuras épicas. Desde noticias actualizadas sobre la franquicia, análisis de películas y series, hasta información detallada sobre personajes y tecnología, nuestro sitio es tu destino definitivo para todo lo relacionado con Star Wars. </p> -->
-                    <p>Bienvenido a nuestro sitio web sobre Star Wars. Explora todo lo relacionado con esta galaxia épica, desde noticias y análisis hasta detalles sobre personajes y tecnología. Únete a la comunidad de fans y que la Fuerza te acompañe en tu viaje por nuestra página.</p>
-                <div class="buttons">
-                    <button class="btn-ppal-1">Boton 1</button>
-                    <button class="btn-ppal-1">Boton 2</button>
+        <!-- SECCION 1 HERO -->
 
+        <section id="hero">
+
+            <div class="hero-description">
+                <h1>La Colección Jedi</h1>
+                    <p>Bienvenido a La Colección Jedi, tu destino definitivo para los coleccionables más épicos de la galaxia. Sumérgete en el emocionante universo de Star Wars a través de nuestra impresionante colección de figuras de acción, donde la Fuerza cobra vida en cada detalle.</p>
+                    
+                <div class="button-container">
+                    <a class="btn-1" href="#">Soy un Sith</a>
+                    <a class="btn-2" href="#">Soy un Jedi</a>
                 </div>
             </div>
 
-            <div class="img">
-                <img class="img-principal" src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1C90FC05DCE986E37D6F434A434CB697ADFB849FCD7284204D2DEEC7D7254C31/scale?width=1200&aspectRatio=1.78&format=jpeg" width="400px">  
-            </div>
+                <img class="hero-img" src="/img/darth-vader.jpg">  
             
             </section>
 
-            <!-- SECCION 2 -->
+            <!-- SECCION 2 ABOUT -->
 
-           <section class="section-2">
+           <section id="about">
             <p>
-                "Star Wars: Episodio I - La Amenaza Fantasma" es la primera entrega de la trilogía de precuelas de Star Wars, dirigida por George Lucas. La trama se centra en la aparición de Anakin Skywalker, un joven esclavo con habilidades Jedi inexploradas, mientras que dos Jedi, Qui-Gon Jinn y Obi-Wan Kenobi, intentan proteger a la Reina Amidala de la Federación de Comercio y descubren la amenaza del misterioso Lord Sith Darth Maul.
+                En La Colección Jedi, entendemos la pasión que despierta esta icónica franquicia, y es por eso que nos dedicamos a proporcionarte las figuras más auténticas y exclusivas que harán las delicias de fans de todas las edades. Ya sea que estés buscando los héroes legendarios como Luke Skywalker y Obi-Wan Kenobi, o los villanos más temibles como Darth Vader y Darth Sidious, aquí encontrarás la selección más amplia y diversa de figuras de Star Wars.
             </p>
            </section>
+
+           <!-- SECCION 3 CARDS -->
+
+           <section id="cards-section">
+            <div class="description-section-3">
+                <h2>Sobre Nosotros</h2>
+                <p>
+                    No importa si eres un Jedi o un Sith, un fanático de la trilogía original o de la última generación de películas, aqui tenemos algo para todos los fanáticos de Star Wars. </p>
+            </div>
+
+            
+            <div class="card-container">
+
+                <!-- CARD 1 -->
+                <div class="card">
+                      <i class="fa-brands fa-jedi-order"></i> 
+                      <h3>Nuestros Productos</h3>
+                      <p>Tenemos los mejores productos de toda la Saga, desde sables de luz hasta figuras de todos los personajes originales.</p>
+                </div>
+    
+                <!-- CARD 2 -->
+    
+                <div class="card">
+                      <i class="fa-solid fa-store"></i>
+                      <h3>Compra Segura</h3>
+                      <p>Compra sin ningun riesgo, tu compra esta protegida. Si no estas conforme con tu producto tienes un reemboloso inmediato.</p>
+                </div>
+    
+                <!-- CARD 3 -->
+    
+                <div class="card">
+                    <i class="fa-solid fa-truck-fast"></i>
+                      <h3>Envios sin costo</h3>
+                      <p>Todas tus figuras favoritas con envio gratis a todo el pais! Con tu compra sumas puntos para obtener descuentos.</p>
+                </div>
+
+            </div>
+
+            </section>
+
+            <!-- SECCION 4 CONTACTO -->
+
+            <section class="section-4">
+                
+                <div class="contacto-contenedor">
+                <h2>Contactanos!</h2>
+                <p>Rolando Brandan</p>
+
+                <ul class="ul-contacto">
+                    <li>
+                          <i class="fa-solid fa-location-crosshairs"></i>
+                          <a>Calle 123</a>
+                    </li>
+
+                    <li>
+                          <i class="fa-solid fa-phone"></i>
+                          <a>Telefono 123</a>
+                    </li>
+
+                    <li>
+                          <i class="fa-solid fa-envelope-circle-check"></i>
+                          <a>mail@mail.com</a>
+                    </li>
+                </ul>
+                
+                
+                <div class="img-contenedor">
+                    <img class="img-contacto" src="/img/halcon-milenario.jpg" alt="">
+                </div>
+                
+            </div>
+                
+            </section>
     </main>
 </body>
 </html>
